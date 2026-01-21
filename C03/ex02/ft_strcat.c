@@ -1,41 +1,42 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_str_is_printable.c                              :+:      :+:    :+:   */
+/*   ft_strcat.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ahodor <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/01/20 10:53:19 by ahodor            #+#    #+#             */
-/*   Updated: 2026/01/20 16:48:44 by ahodor           ###   ########.fr       */
+/*   Created: 2026/01/21 11:41:42 by ahodor            #+#    #+#             */
+/*   Updated: 2026/01/21 17:31:39 by ahodor           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
+//#include <stdio.h>
 
-int	ft_str_is_printable(char *str)
+char	*ft_strcat(char *dest, char *src)
 {
 	int	i;
+	int	dest_len;
 
 	i = 0;
-	while (str[i])
+	dest_len = 0;
+	while (dest[dest_len] != '\0')
+		dest_len++;
+	while (src[i] != '\0')
 	{
-		if (str[i] >= ' ' && str[i] <= '~')
-			i++;
-		else if (str[i] == '\0')
-			i++;
-		else
-			return (0);
+		dest[dest_len + i] = src[i];
+		i++;
 	}
-	return (1);
+	dest[dest_len + i] = '\0';
+	return (dest);
 }
 
 /*int	main(void)
 {
-	int		x;
-	char	*s;
+	char	s1[] = "World";
+	char	s2[] = "Hello";
+	char	*s3;
 
-	s = "ide!&&";
-	x = ft_str_is_printable(s);
-	printf("%c\n", x);
+	s3 = ft_strcat(s2, s1);
+	printf("%s\n", s3);
 	return (0);
 }*/
