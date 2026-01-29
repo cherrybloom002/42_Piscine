@@ -6,7 +6,7 @@
 /*   By: ahodor <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/28 17:25:55 by ahodor            #+#    #+#             */
-/*   Updated: 2026/01/28 17:43:16 by ahodor           ###   ########.fr       */
+/*   Updated: 2026/01/29 11:00:14 by ahodor           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,7 +24,7 @@ int	ft_ultimate_range(int **range, int min, int max)
 		return (0);
 	}
 	ret = max - min;
-	*range= (int *)malloc(sizeof(int) * ret);
+	*range = (int *)malloc(sizeof(int) * ret);
 	if (!*range)
 		return (-1);
 	temp = *range;

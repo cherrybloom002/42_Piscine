@@ -14,7 +14,7 @@
 
 long long	ft_strlen(char *str)
 {
-	long long i;
+	long long	i;
 
 	i = 0;
 	while (str[i])
@@ -25,17 +25,17 @@ long long	ft_strlen(char *str)
 char	*ft_strcat(char *dest, char *src)
 {
 	while (*src)
-		*(dest++) =  *(src++);
+		*(dest++) = *(src++);
 	return (dest);
 }
 
 char	*ft_strjoin(int size, char **strs, char *sep)
 {
-	char	*x;
-	char	*temp;
+	char		*x;
+	char		*temp;
 	long long	strs_len;
-	int	i;
-	
+	int			i;
+
 	if (!size)
 	{
 		x = ((char *)malloc(1));
@@ -46,7 +46,7 @@ char	*ft_strjoin(int size, char **strs, char *sep)
 	i = 0;
 	while (i < size)
 		strs_len += ft_strlen(strs[i++]);
-	x = (char*)malloc(strs_len + (size - 1) * ft_strlen(sep) + 1);
+	x = (char *)malloc(strs_len + (size - 1) * ft_strlen(sep) + 1);
 	temp = ft_strcat(x, strs[0]);
 	i = 1;
 	while (i < size)

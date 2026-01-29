@@ -6,7 +6,7 @@
 /*   By: ahodor <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/28 13:59:43 by ahodor            #+#    #+#             */
-/*   Updated: 2026/01/28 17:16:36 by ahodor           ###   ########.fr       */
+/*   Updated: 2026/01/29 10:58:45 by ahodor           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@ char	*ft_strdup(char *src)
 {
 	char	*str;
 	char	*p;
-	int	len;
+	int		len;
 
 	len = 0;
 	while (src[len])
