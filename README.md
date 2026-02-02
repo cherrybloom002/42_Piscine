@@ -1,2 +1,2 @@
 # 42_Piscine
-Repo per le piscine 2026 della 42Luiss
+Repo for the Piscine of 42Roma of January 2026
