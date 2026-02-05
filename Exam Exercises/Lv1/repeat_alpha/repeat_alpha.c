@@ -24,7 +24,7 @@ int	main(int argc, char **argv)
 			repeat = count(*argv[1]);
 			while (repeat--)
 				write(1, argv[1], 1);
-			argv[1];
+			argv[1]++;
 		}
 	}
 	write(1, "\n", 1);
